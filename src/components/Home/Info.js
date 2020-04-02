@@ -10,20 +10,16 @@ export default function Info() {
                 <div className="row">
                     <div className="col-10 col-sm-8 mx-auto text-center">
                         <p className="lead text-muted mb-5">
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Vitae alias corporis
-                            saepe quae odit autem porro dolorum
-                            officiis consequuntur quia quas,
-                            inventore adipisci nulla. In vel ipsum
-                            ipsa tempore obcaecati harum provident
-                            expedita a corporis commodi. Ex veniam
-                            repellat eius dicta, eum officia culpa
-                            totam consequatur quos, soluta nulla ut.
+                            The modern Australian menu features a fantastic range of a steaks,
+                            burgers and a la carte dishes.
+                            Steaks are a highlight of our grills menu.
+                            From T-Bone to porterhouse, Reserve Angus rib eye fillet to Wagyu scotch fillet,
+                            you’ll be spoilt for choice.
                         </p>
                         <Link to="/about/">
                             <button
                                 className="btn text-uppercase btn-yellow">
-                                about page</button>
+                                about us</button>
                         </Link>
 
 

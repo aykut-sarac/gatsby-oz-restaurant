@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
 :root {
   --mainBrown: #2d1e1f;
   --mainYellow: #ff9e09;
-  --mainGrey: #ece8dc;
+  --mainGrey: #f1f0ed;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainRed: rgb(204, 10, 10);
 }
 
 body{
@@ -13,15 +16,23 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: 'Montserrat', sans-serif!important;
   letter-spacing: 0.25 !important;
 }
+
+
 .text-yellow {
   color: var(--mainYellow);
 }
 .book-icon{
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: var(--mainGrey);
+}
+.book-icon:hover{
+  color: var(--mainWhite);
+  font-size: 1.5rem;
 }
 
 .default-background, .about-background {
@@ -32,6 +43,7 @@ h1,h2,h3,h4,h5,h6 {
   background: linear-gradient(rgb(45, 30, 241,0.5),rgb(45, 30, 241,0.5));
   background-position: center;
   background-size: cover;
+  
 }
 
 .about-background {
@@ -39,25 +51,46 @@ h1,h2,h3,h4,h5,h6 {
   text-align: left;
   
 }
+.menu-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(45, 30, 241,0.5),rgb(45, 30, 241,0.5));
+  background-position: center;
+  background-size: cover;
+}
 
 .btn-yellow{
-  color: var(--mainYellow);
-  border-color: var(--mainYellow);
+  color: var(--mainDark);
+  border-color: var(--mainDark);
 }
 .btn-yellow:hover{
-  background: var(--mainYellow);
-  color: var(--mainBrown)!important;
+  background: var(--mainDark);
+  color: var(--mainWhite)!important;
 }
 
 .footer {
-  background: var(--mainBrown);
+  background: var(--mainDark);
   
 }
 
+.social-icon {
+  border: 0 !important;
+  color: var(--mainGrey);
+
+}
+.social-icon:hover {
+  border: 0 !important;
+  color: white;
+
+}
+
 .menu {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
 }
 
 .contact {
   background: var(--mainWhite);
 }
+

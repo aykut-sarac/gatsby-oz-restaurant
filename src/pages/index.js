@@ -15,8 +15,20 @@ const IndexPage = ({ data }) => (
       title="OZ"
       styleClass="default-background"
     />
+
     <Info />
+    <Background
+      img={data.img2.childImageSharp.fluid}
+      title=""
+      styleClass="default-background"
+    />
+
     <Menu items={data.menu} />
+    <Background
+      img={data.img3.childImageSharp.fluid}
+      title=""
+      styleClass="default-background"
+    />
     <Contact />
   </Layout>
 )
@@ -42,10 +54,24 @@ export const query = graphql`
         price
         category
         image{
-          fixed(width:50,height:50){
+          fixed(width:150,height:150){
             ...GatsbyContentfulFixed_tracedSVG
           }
         }
+      }
+    }
+  }
+  img2:file(relativePath:{eq:"newyork.jpg"}){
+    childImageSharp{
+      fluid{
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  img3:file(relativePath:{eq:"special.jpg"}){
+    childImageSharp{
+      fluid{
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }

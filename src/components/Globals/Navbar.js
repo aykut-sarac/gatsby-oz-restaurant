@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import brand from "../../images/burger.png"
+import brand from "../../images/brand.png"
 import { GoCalendar } from "react-icons/go"
-
+import NavbarIcons from "./NavbarIcons"
 
 
 
@@ -46,11 +46,11 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light">
-                {/* <Link to="/" className="navbar-brand">
-                    {/* <img src={brand} alt="brand" /> */}
-                {/* https://www.iconfinder.com/icons/49742/burger_fast_food_food_hamburger_junk_food_icon */}
-                {/* </Link> * /} */}
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+                <Link to="/" className="navbar-brand">
+                    <img width="70" height="50" src={brand} alt="brand" />
+                    {/* logomakr.com/2KdHnz */}
+                </Link>
                 <button className="navbar-toggler" type="button" onClick={this.navbarHandler} >
                     <span className="navbar-toggler-icon" />
                 </button >
@@ -66,12 +66,13 @@ export default class Navbar extends Component {
                                 )
                             })
                         }
-                        <li className="nav-item ml-sm-5">
+                        <li className="nav-item ml-sm-2 book">
                             <GoCalendar className="book-icon" />
                         </li>
                     </ul>
-
+                    <NavbarIcons />
                 </div>
+
             </nav>
         )
     }

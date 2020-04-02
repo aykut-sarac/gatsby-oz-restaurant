@@ -6,16 +6,16 @@ import Background from "../components/Globals/Background"
 import Info from "../components/Home/Info"
 
 const AboutPage = ({ data }) => (
-    <Layout>
-        <SEO title="Home" />
-        <Background
-            img={data.img.childImageSharp.fluid}
-            title="About OZ"
-            styleClass="about-background"
+  <Layout>
+    <SEO title="Home" />
+    <Background
+      img={data.img.childImageSharp.fluid}
+      title="About OZ"
+      styleClass="about-background"
 
-        />
-        <Info></Info>
-    </Layout>
+    />
+    <Info></Info>
+  </Layout>
 )
 
 export const query = graphql`

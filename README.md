@@ -1,3 +1,9 @@
+Gatsby Restaurant project
+Gatsby/React/Bootstrap/Contentful
+live @ https://gatsby-oz-restaurant.netlify.com/
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
