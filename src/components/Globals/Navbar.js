@@ -22,7 +22,7 @@ export default class Navbar extends Component {
             },
             {
                 id: 3,
-                path: '/menu',
+                path: '/menus',
                 text: 'menu'
             },
             {

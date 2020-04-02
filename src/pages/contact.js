@@ -1,21 +1,21 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/Globals/Background"
 
 
 const ContactPage = ({ data }) => (
-    <Layout>
-        <SEO title="Home" />
-        <Background
-            img={data.img.childImageSharp.fluid}
-            title="Contact"
-            styleClass="menu-background"
+  <Layout>
+    <SEO title="Home" />
+    <Background
+      img={data.img.childImageSharp.fluid}
+      title="Contact"
+      styleClass="menu-background"
 
-        />
+    />
 
-    </Layout>
+  </Layout>
 )
 
 export const query = graphql`

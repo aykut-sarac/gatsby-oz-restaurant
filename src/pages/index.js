@@ -1,5 +1,5 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/Globals/Background"
@@ -55,7 +55,7 @@ export const query = graphql`
         category
         image{
           fixed(width:150,height:150){
-            ...GatsbyContentfulFixed_tracedSVG
+            ...GatsbyContentfulFixed
           }
         }
       }

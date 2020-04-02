@@ -1,30 +1,30 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/Globals/Background"
 
 
 const MenuPage = ({ data }) => (
-    <Layout>
-        <SEO title="Home" />
-        <Background
-            img={data.img.childImageSharp.fluid}
-            title="Menu"
-            styleClass="menu-background"
-        />
-        <Background
-            img={data.img2.childImageSharp.fluid}
-            title=""
-            styleClass="menu-background"
-        />
-        <Background
-            img={data.img3.childImageSharp.fluid}
-            title=""
-            styleClass="menu-background"
-        />
+  <Layout>
+    <SEO title="Home" />
+    <Background
+      img={data.img.childImageSharp.fluid}
+      title="Menu"
+      styleClass="menu-background"
+    />
+    <Background
+      img={data.img2.childImageSharp.fluid}
+      title=""
+      styleClass="menu-background"
+    />
+    <Background
+      img={data.img3.childImageSharp.fluid}
+      title=""
+      styleClass="menu-background"
+    />
 
-    </Layout>
+  </Layout>
 )
 
 export const query = graphql`
